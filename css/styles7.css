@@ -1,0 +1,427 @@
+/*
+colors
+
+off-white
+F7F7F7
+gray separation
+E2E2E2
+
+rich olive green wood AKA the new green
+607240
+
+*/
+
+:root {
+    --richolive: #607240;
+    --whitegray: #F7F7F7;
+    --grayseparation: #E2E2E2;
+}
+
+@font-face {
+    font-family: "opensans-regular";
+    src: url(fonts/opensans/opensans-regular-webfont.woff) format("woff");
+} @font-face {
+    font-family: "opensans-light";
+    src: url(fonts/opensans/opensans-light-webfont.woff) format("woff");
+} @font-face {
+    font-family: "opensans-semibold";
+    src: url(fonts/opensans/opensans-semibold-webfont.woff) format("woff");
+} @font-face {
+    font-family: "opensans-italic";
+    src: url(fonts/opensans/opensans-italic-webfont.woff) format("woff");
+}
+
+
+html {
+    font-size: 1.0em;
+}
+
+nav {
+    border: 1px solid #CCCCCC;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'opensans-light';
+    /*font-weight: 700;*/
+}
+nav a { 
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;}
+nav a:link { color: #000000; }
+nav a:visited { color: #000000; }
+nav a:hover { color: var(--richolive); }
+nav a:active { color: var(--richolive); }
+nav ul {
+    display: inline-block;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+	margin: 0;
+	padding: 0;}
+nav li {
+    display: inline;
+	width: 100%;
+	border-bottom: 1px solid #000000;
+}
+
+body {
+	background-color: var(--whitegray);
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.0rem;
+    color: var(--richolive);
+    text-align: center;
+    font-weight: 100;
+    margin: 3rem 0 1rem 0;
+}
+
+.hidden-br { display: none; }
+
+.board {
+    color: var(--whitegray);
+    background-color: var(--richolive);
+    background-image: url(../images/rich-olive-wood-2000.jpg);
+    background-size: 1000px;
+    background-repeat: repeat;
+    margin-bottom: 0.8rem;
+}
+
+.boardtext {
+    margin: 0;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.board h2:first-of-type {
+    margin-top: 0;
+}
+
+.board h2 {
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    font-family: 'opensans-regular';
+}
+
+.board p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-family: 'opensans-light';
+}
+
+.board ul {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-family: 'opensans-light';
+}
+
+p.credits {
+    text-align: center;
+}
+
+a:link { color: #91c591; }
+a:visited { color: #91c591; }
+a:hover { color: #64ae64; }
+a:active { color: #64ae64; }
+
+a[href^="mailto:"]:link { color: darkgreen; }
+a[href^="mailto:"]:visited { color: darkgreen; }
+a[href^="mailto:"]:hover { color: darkgreen; }
+a[href^="mailto:"]:active { color: darkgreen; }
+#email-line-small-margins {
+    margin-top: -0.7rem;
+    margin-bottom: -0.7rem;
+}
+#service-line-small-margins {
+}
+
+#contact-background.board {
+    background-color: var(--grayseparation);
+    background-image: url(../images/garden-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-background.board .boardwrap {
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#contact-background.board .boardtext {
+    background-color: rgba(255,255,255,.8);
+    border-radius: 0.8rem;
+    text-align: center;
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#contact-background.board .boardtext p {
+    font-family: 'opensans-regular';
+}
+
+/* OPTIONAL see contact.html */
+#map-board.board {
+}
+
+.hero-photo img {
+    width: 100%;
+    display: block;
+    border-radius: 0.8rem;
+}
+
+.map-photo img {
+    width: 100%;
+    display: block;
+    border-radius: 0.8rem;
+}
+
+.photos img {
+    margin-bottom: 0.8rem;
+    max-height: 35rem;
+    object-fit: contain;
+}
+
+/* photo of Jo on display */
+.jo-photo img {
+    width: 100%;
+    display: block;
+    border-radius: 0.8rem;
+}
+.photowrapper {
+    border-radius: 0.8rem;
+    display: inline-block;
+}
+.photowrapper img {
+    margin-bottom: 0;
+}
+
+.photos {
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+    
+[class^="inlineicon"] {
+    height: 1.6rem;
+    margin-bottom: -0.4rem;
+    border-radius: 0.5rem;
+}
+
+footer {
+    color: var(--whitegray);
+}
+
+footer.board p {
+    margin: 0;
+    padding: 2rem;
+    font-size: 0.95rem;
+    font-family: 'opensans-light';
+    text-align: center;
+}
+
+/*************/
+/* SLIDESHOW */
+/*************/
+
+/* main container */
+.transformation-general-container {
+    background-color: var(--grayseparation);
+    border-style: solid;
+    border-width: thin;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+/* header */
+.transformation-general-container h2 {
+    margin: 1rem;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    font-family: 'opensans-regular';
+}
+
+/* photo container */
+.transformation-slideshow-container {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* hide imagesby default */
+.transform-slide {
+    display: none;
+}
+
+/* fit image to container */
+.transform-slide img {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 0.8rem;
+}
+
+/* next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* position 'Next Button' to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on :hover (disabled), darken the background */
+.prev, .next {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* caption text */
+.caption {
+    color: #f7f7f7;
+    font-family: 'opensans-regular';
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* number text (1/4 etc) */
+.number-text {
+    color: black;
+    font-family: "opensans-regular";
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media (min-width: 510px) {
+    html {
+        font-size: 1.15em;
+    }
+    h1 { 
+        font-size: 2.4rem;
+        margin: 2.5rem 0 1rem 0;
+    }
+    .hidden-br {
+        display: none;
+    }
+}
+
+@media (min-width: 590px) {
+    html {
+        font-size: 1.25em;
+    }
+    h1 { 
+        font-size: 2.6rem;
+        margin: 2.5rem 0 1rem 0;
+    }
+    .hidden-br { display: none; }
+    .photos {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .transformation-general-container {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        /*when not on mobile, draw all borders*/
+        border-bottom: solid;
+        border-right: solid;
+        border-left: solid;
+        border-width: thin;
+    }
+    #contact-background.board {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 220px;
+    }
+    #contact-background.board {
+    }
+    #contact-background.board .boardwrap {
+    }
+    #contact-background.board .boardtext {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 670px) {
+    h1 { 
+        font-size: 3rem;
+        margin: 3rem 0 1rem 0;
+    }
+}
+
+@media (min-width: 950px) {
+    .photos {
+        max-width: 55%;
+    }
+    .transformation-general-container {
+        max-width: 55%;
+    }
+    #contact-background.board {
+        max-width: 55%;
+        min-height: 235px;
+    }
+    .board {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.2rem;
+    }
+    .boardtext {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #welcome-board { text-align: center; }
+    #contact-first-board { text-align: center; }
+    .main-wrapper {
+    }
+}
