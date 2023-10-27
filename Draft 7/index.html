@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Beauty In Your Life</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles7.css">
+    <link rel="icon" href="images/green-mtn-icon.png">
+</head>
+<body>
+    <header>
+        <h1>Create Beauty<br class="hidden-br"> In Your Life</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Service</a></li>
+                <li><a href="aboutjo.html">About The Designer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main> <div class="main-wrapper">
+        <div class="board" id="welcome-board">
+            <div class="boardtext">
+                <h2>Welcome!</h2>
+                <p>Are you ready to add beauty to your indoor / outdoor living space? You've come to the right place!</p>
+            </div>
+        </div>
+        <div class="photos hero-photo">
+            <img src="images/hero-index.jpg" alt="Photo of she-shed">
+        </div>
+        <div class="board">
+            <div class="boardtext">
+                <h2>Joanne's Custom Design Service</h2>
+                <p>Jo approaches every project with care and meticulous detail. She will learn your personal style so that your vision may come to life!</p>
+                <ul>
+                    <li>She is ready to design any room, yard, or patio according to your needs.</li>
+                    <li>She specializes in constructing custom-built features &amp; sheds.</li>
+                    <li>If you are interested in garden-greenery, foliage, or flowers of any kind, you're in luck&mdash;Jo is a knowledgable gardener.</li>
+                    <li>The end-product will be a custom-designed place of enjoyment!</li>
+                </ul>
+                <p>Does your front yard need appeal? Does your back yard need an upgrade? Are you interested in custom home-like sheds? Need an expert to add to your interior? Then let Jo transform that for you!</p>
+            </div>
+        </div>
+        
+        <!-- SLIDESHOW -->
+        <div class="transformation-general-container">
+            <h2>Previous Transformations</h2>
+
+            <div class="transformation-slideshow-container">
+
+                <!-- Images in the slideshow with number and caption -->
+                <div class="transform-slide fade">
+                    <div class="number-text">1 / 5</div>
+                    <img src="images/slide-1.jpg" alt="Present background images">
+                    <div class="caption"></div>
+                </div>
+                <div class="transform-slide fade">
+                    <div class="number-text">2 / 5</div>
+                    <img src="images/slide-2.jpg" alt="Cozy She-Shed">
+                    <div class="caption"></div>
+                </div>
+                <div class="transform-slide fade">
+                    <div class="number-text">3 / 5</div>
+                    <img src="images/slide-3.jpg" alt="Interior Furnishing">
+                    <div class="caption"></div>
+                </div>
+                <div class="transform-slide fade">
+                    <div class="number-text">4 / 5</div>
+                    <img src="images/slide-4.jpg" alt="Backyard Before">
+                    <div class="caption"></div>
+                </div>
+                <div class="transform-slide fade">
+                    <div class="number-text">5 / 5</div>
+                    <img src="images/slide-5.jpg" alt="Pathway at Night">
+                    <div class="caption"></div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("transform-slide");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slides[slideIndex-1].style.display = "block";
+            }
+        </script>
+        
+    </div></main>
+    
+    <footer class="board">
+        <p>Copyright &copy; 2022 Create Beauty In Your Life<br><a href="credits.html">Credits</a> &nbsp; <a href="contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>
